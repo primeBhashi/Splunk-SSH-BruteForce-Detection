@@ -27,6 +27,8 @@ To detect the attack, the following Splunk Search Processing Language (SPL) quer
 **1. Identifying Failed Logins:**
 `source="/var/log/auth.log" "Failed password"`
 
+<img width="960" height="504" alt="fail alerts" src="https://github.com/user-attachments/assets/9f9ded62-584c-4679-af13-cf099b7299b1" />
+
 **2. Timechart of Attack Spikes (Monitoring volume over time):**
 `source="/var/log/auth.log" "Failed password" | timechart count span=1m`
 
